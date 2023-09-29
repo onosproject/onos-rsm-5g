@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# SPDX-FileCopyrightText: 2023-present Intel Corporation
+#
+# SPDX-License-Identifier: Apache-2.0
+
+set -e
+
+echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USER" --password-stdin
+make images
+docker push onosproject/onos-rsm-5g:latest

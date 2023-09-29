@@ -1,2 +1,2 @@
 # onos-rsm-5g
-Support code for RSM Project
+xApplication for ONF near-RT RIC to manage RAN slices in 5G cellular networks
